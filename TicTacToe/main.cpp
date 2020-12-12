@@ -64,6 +64,7 @@ void setup()
     // --- ---
 }
 
+// Imprime na tela
 void draw()
 {
     system("cls");
@@ -84,6 +85,7 @@ void draw()
     verificControlGame();
 }
 
+// Entrada de dados
 void input()
 {
     testkey = 1;
@@ -100,6 +102,7 @@ void input()
     }
 }
 
+// Logica do progama
 void logic()
 {
     // Verificação para exibir a mascara
@@ -190,6 +193,7 @@ void logic()
     num_valid_plays++;
 }
 
+// Verificações de controle do jogo
 void verificControlGame()
 {
     if (winGame)
@@ -211,6 +215,6 @@ void verificControlGame()
     if (num_valid_plays == 9 && winGame != 1)
     {
         winGame = 1;
-        cout << "\nEmpate, tente novamente";
+        cout << "\nEmpate, jogue novamente";
     }
 }
