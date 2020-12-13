@@ -55,6 +55,10 @@ Um jogo em que dois jogadores alternadamente colocar ❌ e ⭕ em compartimentos
 
 O layout do jogo é:
 
+<div align="center">
+    <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/imagePrint.png" alt="Image" title="Image" width="100%" />
+</div>
+
 ## :computer: Ferramentas
 
 Este jogo foi realizado usando as seguintes Ferramentas:
