@@ -59,20 +59,21 @@ O layout do jogo é:
 
 Este jogo foi realizado usando as seguintes Ferramentas:
 
-
+<div align="center">
 <p>
 <a href="https://visualstudio.microsoft.com/">
     <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/visual-studio-icon.png" alt="Visual Studio" title="Visual Studio" width="24px" />
 </a>
-
+&nbsp;&nbsp;&nbsp;
 <a href="https://code.visualstudio.com/">
     <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/Visual-Studio-Code-icon.png" alt="Visual Studio Code" title="Visual Studio Code" width="24px" />
 </a>
-
+&nbsp;&nbsp;&nbsp;
 <a href="https://inkscape.org/">
     <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/inkscape-icon.png" alt="InkScape" title="InkScape" width="24px" />
 </a>
 </p>
+</div>
 
 
 ## :construction_worker: Como rodar o projeto
