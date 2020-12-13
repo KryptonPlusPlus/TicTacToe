@@ -1,4 +1,4 @@
-﻿#include <conio.h>  // Biblioteca para usar _getch
+﻿#include <conio.h>   // Biblioteca para usar _getch
 #include <iostream>
 
 using namespace std;
@@ -52,7 +52,7 @@ int main()
 
     // Fim...
     cout << "\n\n";
-    
+
     system("pause");
     system("cls");
     
