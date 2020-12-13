@@ -9,7 +9,7 @@
 <img alt="Repository size" src="https://img.shields.io/github/repo-size/KryptonPlusPlus/TicTacToe" />
 
 <a href="https://github.com/KryptonPlusPlus/TicTacToe/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/KryptonPlusPlus/TicTacToe?style=social">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/KryptonPlusPlus/TicTacToe?style=social" />
 </a>
 </p>
 
@@ -31,7 +31,7 @@ Um jogo em que dois jogadores alternadamente colocar ❌ e ⭕ em compartimentos
 
 - [x] Compatibilidade:
     - [x] Windows
-    - [] Linux (Implementações em futuras atualizações)
+    - [ ] Linux (Implementações em futuras atualizações)
 
 - [x] Jogar jogo da velha com um amigo:
     - [x] Com dois jogadores, um sendo ❌ e o outro ⭕.
@@ -47,9 +47,9 @@ Um jogo em que dois jogadores alternadamente colocar ❌ e ⭕ em compartimentos
 <br/>
 
 - [x] Comandos
-    - [x] [1-9] Número da casa do tabuleiro.
-    - [x] [X] Sair do jogo.
-    - [x] [P] Ativar máscara das casas do tabuleiro.
+    - [x] **[1-9]** Número da casa do tabuleiro.
+    - [x] **[X]** Sair do jogo.
+    - [x] **[P]** Ativar máscara das casas do tabuleiro.
 
 ## 🎨 Layout
 
@@ -59,28 +59,21 @@ O layout do jogo é:
 
 Este jogo foi realizado usando as seguintes Ferramentas:
 
-<ul>
-  <li>
-    <a href="https://visualstudio.microsoft.com/">
-        <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/visual-studio-icon.png" alt="Visual Studio" title="Visual Studio" width="32px">
-        Visual Studio
-    </a>
-  </li>
 
-  <li>
-    <a href="https://code.visualstudio.com/">
-        <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/Visual-Studio-Code-icon.png" alt="Visual Studio Code" title="Visual Studio Code" width="32px">
-        Visual Studio Code
-    </a>
-  </li>
+<p>
+<a href="https://visualstudio.microsoft.com/">
+    <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/visual-studio-icon.png" alt="Visual Studio" title="Visual Studio" width="24px" />
+</a>
 
-  <li>
-    <a href="https://inkscape.org/">
-        <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/inkscape-icon.png" alt="InkScape" title="InkScape" width="32px">
-        InkScape
-    </a>
-  </li>
-</ul>
+<a href="https://code.visualstudio.com/">
+    <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/Visual-Studio-Code-icon.png" alt="Visual Studio Code" title="Visual Studio Code" width="24px" />
+</a>
+
+<a href="https://inkscape.org/">
+    <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/inkscape-icon.png" alt="InkScape" title="InkScape" width="24px" />
+</a>
+</p>
+
 
 ## :construction_worker: Como rodar o projeto
 
