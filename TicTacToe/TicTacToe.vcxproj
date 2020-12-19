@@ -143,10 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="GameMenu.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="_TicTacToe.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GameMenu.h" />
     <ClInclude Include="_TicTacToe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

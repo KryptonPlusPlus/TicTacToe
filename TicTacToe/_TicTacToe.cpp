@@ -2,15 +2,21 @@
 //
 #include "_TicTacToe.h"
 
+_TicTacToe::_TicTacToe() 
+{
+
+}
+
 void _TicTacToe::setup()
 {
+    start = clock();    // Começa o tempo
     printf(ESC"[?25l"); // Desativa o cursor
 }
 
 // String dos dados do jogo, para imprimir na tela
 string _TicTacToe::draw()
 {
-    string StringDraw = "";
+   string StringDraw = "";
 
     StringDraw += "TicTacToe 1.1.0  \n\n";
     
@@ -165,4 +171,10 @@ void _TicTacToe::logic()
 
     // Incrementa as jogadas
     num_valid_plays++;
+}
+
+void _TicTacToe::endGame()
+{
+    end = clock();
+    temp_in_game = ((end - start) / (CLOCKS_PER_SEC));
 }

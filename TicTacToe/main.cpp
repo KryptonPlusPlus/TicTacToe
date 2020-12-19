@@ -1,16 +1,19 @@
 ﻿// Jogo da velha 1.1.0
-#include <iostream> // cout              -> Para escrever no terminal
-#include <time.h>   // clock_t e clock() -> Para calcular o tempo de jogo
+#include <iostream> // cout -> Para escrever no terminal
 
+#include "GameMenu.h"
 #include "_TicTacToe.h"
-_TicTacToe game;
 
 using namespace std;
 
 int main()
 {
-    clock_t start, end;
-    start = clock();
+    GameMenu menuGame = GameMenu();
+    _TicTacToe game = _TicTacToe();
+
+    cout << menuGame.draw();
+
+    system("pause");
 
     game.setup();
 
@@ -26,10 +29,9 @@ int main()
         if (!game.getTestKey())
             game.logic();
     }
-
-    end = clock();
-
-    cout << "\n\nTempo decorrido: " << ((double)((double)end - (double)start) / ((double)(CLOCKS_PER_SEC))) << " segundos.";
+    game.endGame();
+    
+    cout << "\n\nTempo decorrido: " << game.getTempInGame() << " segundos.";
 
     // Fim...
     cout << "\n\n";
