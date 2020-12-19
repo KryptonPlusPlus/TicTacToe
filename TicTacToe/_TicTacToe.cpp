@@ -1,14 +1,13 @@
 // _TicTacToe.cpp
 //
 #include "_TicTacToe.h"
-#include <string>
 
 void _TicTacToe::setup()
 {
-
+    printf(ESC"[?25l"); // Desativa o cursor
 }
 
-// Imprime na tela
+// String dos dados do jogo, para imprimir na tela
 string _TicTacToe::draw()
 {
     string StringDraw = "";
@@ -24,7 +23,7 @@ string _TicTacToe::draw()
 
         StringDraw += "\n"s + ((i != 2) ? "---+---+---" : "") + "\n"s;
     }
-    StringDraw += "\nVez do jogador " + to_string(player + 1) + "\n"s + verificControlGame();
+    StringDraw += "\nVez do jogador " + to_string(player + 1) + ".\n"s + verificControlGame();
     
     return StringDraw;
 }
@@ -35,23 +34,23 @@ string _TicTacToe::verificControlGame()
     string StringVerific = "";
     if (winGame)
     {
-        StringVerific += "\nParabens o jogador " + to_string(player + 1) + " venceu" +  "\njogador " + _player;
+        StringVerific += "\nParabens o jogador " + to_string(player + 1) + " venceu." +  "\njogador " + _player + "."s;
     }
     
     if (controlErr)
     {
-        StringVerific += "Jogada invalida tente novamente";
+        StringVerific += "Jogada invalida tente novamente.";
     }
 
     if (testkey)
     {
-        StringVerific += "Comando invalido... tente novamente";
+        StringVerific += "Comando invalido... tente novamente. \a";
     }
 
     if (num_valid_plays == 9 && winGame != 1)
     {
         winGame = 1;
-        StringVerific += "\nEmpate, jogue novamente";
+        StringVerific += "\nEmpate, jogue novamente.";
     }
     return StringVerific;
 }
