@@ -1,6 +1,6 @@
 // GameMenu.cpp
 //
-
+#include <iostream>
 #include "GameMenu.h"
 
 // 				Jogo da Velha 1.1.0
@@ -13,6 +13,7 @@
 // [ ] Jogar
 // [ ] Histórico das Ultimas Partidas
 // [ ] Reset
+// [ ] Sair
 
 void GameMenu::setup()
 {
@@ -29,19 +30,79 @@ string GameMenu::draw()
 
 	StringDraw += "\nTempo Total Jogado - " + "\n\n"s;
 
-	StringDraw += "[ ]"s + " Jogar\n";
-	StringDraw += "[ ]"s + " Historico das Ultimas Partidas\n";
-	StringDraw += "[ ]"s + " Reset\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Jogar)     ? 'X' : ' ') + "]"s + " Jogar\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Historico) ? 'X' : ' ') + "]"s + " Historico das Ultimas Partidas\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Reset)     ? 'X' : ' ') + "]"s + " Reset\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Sair)      ? 'X' : ' ') + "]"s + " Sair\n";
 
 	return StringDraw;
 }
 
 void GameMenu::input()
 {
+	char_control = _getch();
 
+	//   Verifica se foi digitado uma seta, pois ela gera duas entradas, caso tenha sido a seta
+	// comum retorna 224 mais o valor da seta e se for a seta do teclado numero retorna 0 mais 
+	// o valor da seta
+	if (char_control == 224 || char_control == 0)
+	{
+		char_control = _getch();
+	}
+
+	// Verificação de se o caracter digitado é valido
+	for (int i = 0; i < sizeof(key) / sizeof(key[0]); i++)
+	{
+		if (char_control == key[i])
+		{
+			break;
+		}
+	}
 }
 
 void GameMenu::logic()
 {
+	switch (char_control)
+	{
+		case ARROW_UP:
 
+			selection_box = (SelectionBox)((int)selection_box - 1);
+
+			if (selection_box < SelectionBox::Jogar)
+			{
+				selection_box = SelectionBox::Sair;
+			}
+			break;
+		case ARROW_DOWN:
+
+			selection_box = (SelectionBox)((int)selection_box + 1);
+
+			if (selection_box > SelectionBox::Sair)
+			{
+				selection_box = SelectionBox::Jogar;
+			}
+			break;
+		case ENTER:
+
+			switch (selection_box)
+			{
+				case SelectionBox::Jogar:
+					init_jogar = 1;
+					break;
+				case SelectionBox::Historico:
+					break;
+				case SelectionBox::Reset:
+					break;
+				case SelectionBox::Sair:
+					exit(0);
+					break;
+
+				default:
+					break;
+			}
+			break;
+
+		default:
+			break;
+	}
 }

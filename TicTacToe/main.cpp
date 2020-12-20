@@ -6,15 +6,43 @@
 
 using namespace std;
 
+void initGame();
+
 int main()
 {
-    GameMenu menuGame = GameMenu();
-    _TicTacToe game = _TicTacToe();
+    GameMenu menuGame = GameMenu();   
 
-    cout << menuGame.draw();
+    while (menuGame.getCharControl() != 'x')
+    {
+        system("cls");
+        menuGame.setup();
+
+        cout << menuGame.draw();
+        menuGame.input();
+        menuGame.logic();
+
+        if (menuGame.getInitJogar())
+        {
+            initGame();
+            system("pause");
+
+            menuGame = GameMenu();
+        }
+    }
+
+    // Fim...
+    system("cls");
+    cout << "Obrigado por Jogar, volte sempre.\n";
 
     system("pause");
 
+    return 0;
+} // --- end main ---
+
+// Função para começar o jogo
+void initGame()
+{
+    _TicTacToe game = _TicTacToe();
     game.setup();
 
     while (game.getCharControl() != 'x')
@@ -26,18 +54,10 @@ int main()
         if (game.getWinGame())
             break;
         game.input();
-        if (!game.getTestKey())
+        if (game.getTestKey())
             game.logic();
     }
     game.endGame();
-    
-    cout << "\n\nTempo decorrido: " << game.getTempInGame() << " segundos.";
 
-    // Fim...
-    cout << "\n\n";
-
-    system("pause");
-    system("cls");
-    
-    return 0;
-} // --- end main ---
+    cout << "\nTempo decorrido: " << game.getTempInGame() << " segundos.\n";
+}

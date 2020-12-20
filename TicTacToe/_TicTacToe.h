@@ -6,14 +6,14 @@
 #include <string>    // to_string()       -> Converter int para string
 
 // Parte do codigo para Windows
-#ifdef _WIN32 || WIN32
+#ifdef _WIN32 
 #include <conio.h>   // _getch()          -> Pegar a tecla digitada 
 
 #endif // end if _WIN32 || WIN23
 
 
 // Parte do codigo para Linux
-#ifdef __linux__ || LINUX
+#ifdef __linux__ 
 
 #error
 
@@ -47,12 +47,13 @@ class _TicTacToe
 		bool player          = 0; // Define a vez dos jogadores
 		bool winGame         = 0; // Define quando o jogo acaba com vitória
 		bool controlErr      = 0; // Quando ocorre algum erro
-		bool testkey         = 0; // Verifição para caso tenha sido inserido uma tecla invalida (teclas validas em key[]) 
+		bool testkey         = 1; // Verifição para caso tenha sido inserido uma tecla invalida (teclas validas em key[]) 
 		bool showMask        = 0; // Define se ativa ou desativa a mascara
 		int  char_control    = 0; // Guarda a tecla digitada
 		int  num_valid_plays = 0; // Numero de jogadas invalidas, para definir quando acaba o jogo e gera o empate
 
 		// --- Variáveis adicionais do jogo ---
+
 		clock_t start = 0;        // Tempo em que o jogo começou
 		clock_t end   = 0;        // Tempo em que o jogo acabou
 		long int temp_in_game = 0;// Tempo de jogo
@@ -63,7 +64,7 @@ class _TicTacToe
 	// ================================================= Parte publica da classe =================================================
 	public:
 		// --- contructor & destructor ---
-		_TicTacToe();		
+		_TicTacToe() {};
 		virtual ~_TicTacToe() {};
 
 		// --- Definição das funções publicas ---

@@ -2,11 +2,6 @@
 //
 #include "_TicTacToe.h"
 
-_TicTacToe::_TicTacToe() 
-{
-
-}
-
 void _TicTacToe::setup()
 {
     start = clock();    // Começa o tempo
@@ -40,17 +35,17 @@ string _TicTacToe::verificControlGame()
     string StringVerific = "";
     if (winGame)
     {
-        StringVerific += "\nParabens o jogador " + to_string(player + 1) + " venceu." +  "\njogador " + _player + "."s;
+        StringVerific += "\nParabens o jogador " + to_string(player + 1) + " venceu." +  "\njogador " + _player + ".\n"s;
     }
     
     if (controlErr)
     {
-        StringVerific += "Jogada invalida tente novamente.";
+        StringVerific += "Jogada invalida tente novamente.\n";
     }
 
-    if (testkey)
+    if (!testkey)
     {
-        StringVerific += "Comando invalido... tente novamente. \a";
+        StringVerific += "Comando invalido... tente novamente.\n \a";
     }
 
     if (num_valid_plays == 9 && winGame != 1)
@@ -64,7 +59,7 @@ string _TicTacToe::verificControlGame()
 // Entrada de dados
 void _TicTacToe::input()
 {
-    testkey = 1;
+    testkey = 0;
 
     char_control = _getch();
     // Verificação de se o caracter digitado é valido
@@ -72,7 +67,7 @@ void _TicTacToe::input()
     {
         if (char_control == key[i])
         {
-            testkey = 0;
+            testkey = 1;
             break;
         }
     }
