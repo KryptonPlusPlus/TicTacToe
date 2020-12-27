@@ -41,7 +41,7 @@ class GameMenu
 		int char_control = 0;
 		bool init_jogar = 0;
 
-		enum class SelectionBox{Jogar, Historico, Reset, Sair};
+		enum class SelectionBox{Jogar, Historico, Reset, Instrucoes, Sair};
 		SelectionBox selection_box = SelectionBox::Jogar;
 
 	// ================================================= Parte publica da classe =================================================
@@ -57,9 +57,9 @@ class GameMenu
 		void logic();
 
 		// --- gets ---
-		int  getCharControl()  { return char_control; }
+		int  getCharControl()  { return char_control;       }
 		int  getSelectionBox() { return (int)selection_box; }
-		bool getInitJogar()    { return init_jogar; }
+		bool getInitJogar()    { return init_jogar;         }
 
 		// --- sets ---
 		void setInitJogar(bool valuer) {init_jogar = valuer; }

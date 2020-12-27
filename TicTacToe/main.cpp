@@ -3,18 +3,30 @@
 
 #include "GameMenu.h"
 #include "_TicTacToe.h"
-
+#include "CharRectangle.h"
 using namespace std;
 
 void initGame();
 
 int main()
 {
+    CharRectangle test = CharRectangle(3, 9, 0);
+    test.stringInCenter("");
+    cout << "\033[;31m";
+    string* oi = test.getCharRectangle();
+    for (int i = 0; i < 3; i++)
+    {
+        cout << oi[i];
+        cout << "\n";
+    }
+
     GameMenu menuGame = GameMenu();   
 
+    system("pause");
     while (menuGame.getCharControl() != 'x')
     {
         system("cls");
+
         menuGame.setup();
 
         cout << menuGame.draw();

@@ -117,44 +117,44 @@ void _TicTacToe::logic()
         winGame = 1;
     }
     else if (print_game_board[1][0] == _player &&
-        print_game_board[1][1] == _player &&
-        print_game_board[1][2] == _player)
+             print_game_board[1][1] == _player &&
+             print_game_board[1][2] == _player)
     {
         winGame = 1;
     }
     else if (print_game_board[2][0] == _player &&
-        print_game_board[2][1] == _player &&
-        print_game_board[2][2] == _player)
+             print_game_board[2][1] == _player &&
+             print_game_board[2][2] == _player)
     {
         winGame = 1;
     }
     else if (print_game_board[0][0] == _player &&
-        print_game_board[1][0] == _player &&
-        print_game_board[2][0] == _player)
+             print_game_board[1][0] == _player &&
+             print_game_board[2][0] == _player)
     {
         winGame = 1;
     }
     else if (print_game_board[0][1] == _player &&
-        print_game_board[1][1] == _player &&
-        print_game_board[2][1] == _player)
+             print_game_board[1][1] == _player &&
+             print_game_board[2][1] == _player)
     {
         winGame = 1;
     }
     else if (print_game_board[0][2] == _player &&
-        print_game_board[1][2] == _player &&
-        print_game_board[2][2] == _player)
+             print_game_board[1][2] == _player &&
+             print_game_board[2][2] == _player)
     {
         winGame = 1;
     }
     else if (print_game_board[0][2] == _player &&
-        print_game_board[1][1] == _player &&
-        print_game_board[2][0] == _player)
+             print_game_board[1][1] == _player &&
+             print_game_board[2][0] == _player)
     {
         winGame = 1;
     }
     else if (print_game_board[0][0] == _player &&
-        print_game_board[1][1] == _player &&
-        print_game_board[2][2] == _player)
+             print_game_board[1][1] == _player &&
+             print_game_board[2][2] == _player)
     {
         winGame = 1;
     }
