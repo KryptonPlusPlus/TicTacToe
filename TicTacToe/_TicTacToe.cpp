@@ -11,7 +11,7 @@ void _TicTacToe::setup()
 // String dos dados do jogo, para imprimir na tela
 string _TicTacToe::draw()
 {
-   string StringDraw = "";
+    string StringDraw = "";
 
     StringDraw += "TicTacToe 1.1.0  \n\n";
     
@@ -19,7 +19,7 @@ string _TicTacToe::draw()
     {
         for (int j = 0; j < 3; j++)
         {
-            StringDraw += " "s + ((!showMask) ? print_game_board[i][j] : (game_board[i][j])) + ((j != 2) ? " |" : "");  
+            StringDraw += " "s + ((!showMask) ? print_game_board[i][j] : (game_board[i][j])) + ((j != 2) ? " |" : "");
         }
 
         StringDraw += "\n"s + ((i != 2) ? "---+---+---" : "") + "\n"s;

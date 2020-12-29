@@ -2,7 +2,10 @@
 //
 #pragma once
 
+// ----- Início das Inclusões das Bibliotecas -----
+
 #include <string>    // to_string()       -> Converter int para string
+#include "Utils.h"
 
 // Parte do codigo para Windows
 #ifdef _WIN32 
@@ -18,13 +21,7 @@
 
 #endif // end if __linux__ || LINUX
 
-#define ESC "\033"
-
-#define ARROW_UP    72
-#define ARROW_DOWN  80
-#define ARROW_LEFT  75
-#define ARROW_RIGHT 77
-#define ENTER       13
+//  ----- Fim das Inclusões das Bibliotecas -----
 
 using namespace std;
 
@@ -34,9 +31,9 @@ class GameMenu
 	private:
 
 		// Array com todas as possibilidades de teclas de entrada
-		char key[4]{ARROW_UP, ARROW_DOWN, ENTER, 'x'};
+		char key[4]{ key_arrow_up, key_arrow_down, key_enter, 'x'};
 
-		// --- Variáveis de controle do jogo ---
+		// --- Variáveis de controle ---
 		
 		int char_control = 0;
 		bool init_jogar = 0;

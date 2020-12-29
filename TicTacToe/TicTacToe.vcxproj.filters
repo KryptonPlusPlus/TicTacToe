@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Keyboard">
+      <UniqueIdentifier>{95cb30a9-2aaa-4e5f-b3f9-4603d84f075e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -25,7 +28,13 @@
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="CharRectangle.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard.cpp">
+      <Filter>Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keycaps.cpp">
+      <Filter>Keyboard</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -35,8 +44,17 @@
     <ClInclude Include="GameMenu.h">
       <Filter>Arquivos de Cabeçalho</Filter>
     </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Arquivos de Recurso</Filter>
+    </ClInclude>
     <ClInclude Include="CharRectangle.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
+      <Filter>Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard.h">
+      <Filter>Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keycaps.h">
+      <Filter>Keyboard</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

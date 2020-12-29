@@ -2,8 +2,11 @@
 //
 #pragma once
 
+// ----- Início das Inclusões das Bibliotecas -----
+
 #include <time.h>    // clock_t e clock() -> Para calcular o tempo de jogo
 #include <string>    // to_string()       -> Converter int para string
+#include "Utils.h"
 
 // Parte do codigo para Windows
 #ifdef _WIN32 
@@ -19,10 +22,11 @@
 
 #endif // end if __linux__ || LINUX
 
-#define _player ( player ? 'X' : 'O' )
-#define ESC "\033"
+//  ----- Fim das Inclusões das Bibliotecas -----
 
 using namespace std;
+
+#define _player ( player ? 'X' : 'O' )
 
 class _TicTacToe
 {

@@ -4,24 +4,45 @@
 #include "GameMenu.h"
 #include "_TicTacToe.h"
 #include "CharRectangle.h"
+#include "Keyboard.h"
+#include "Utils.h"
+
 using namespace std;
 
 void initGame();
 
 int main()
 {
-    CharRectangle test = CharRectangle(3, 9, 0);
-    test.stringInCenter("");
-    cout << "\033[;31m";
-    string* oi = test.getCharRectangle();
-    for (int i = 0; i < 3; i++)
-    {
-        cout << oi[i];
-        cout << "\n";
-    }
+    system("pause");
 
     GameMenu menuGame = GameMenu();   
+    Keyboard a = Keyboard();
 
+    a.createLine(2);
+    a.createLine(2);
+    a.createLine(2);
+    
+    a.createKey(0, 0, 3, 5);
+    a.createKey(0, 1, 10, 5);
+    a.createKey(1, 1, 4, 6);
+
+    std::string *oi = a.getKeycaps(0, 0);
+    std::string *oai = a.getKeycaps(0, 1);
+    std::string *oaai = a.getKeycaps(1, 1);
+
+    for (int i = 0; i < 3; i++)
+    {
+        cout << oi[i] << "\n";
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        cout << oai[i] << "\n";
+    }
+    for (int i = 0; i < 3; i++)
+    {
+        cout << oaai[i] << "\n";
+    }
+    
     system("pause");
     while (menuGame.getCharControl() != 'x')
     {

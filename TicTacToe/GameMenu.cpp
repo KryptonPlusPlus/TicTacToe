@@ -12,9 +12,10 @@
 //
 // Tempo Total Jogado -
 //
-// [ ] Jogar
+// [X] Jogar
 // [ ] Histórico das Ultimas Partidas
 // [ ] Reset
+// [ ] Instruções
 // [ ] Sair
 //
 // Aperte Enter para escolher uma das opções
@@ -75,7 +76,7 @@ void GameMenu::logic()
 {
 	switch (char_control)
 	{
-		case ARROW_UP:
+		case key_arrow_up:
 
 			selection_box = (SelectionBox)((int)selection_box - 1);
 
@@ -84,7 +85,7 @@ void GameMenu::logic()
 				selection_box = SelectionBox::Sair;
 			}
 			break;
-		case ARROW_DOWN:
+		case key_arrow_down:
 
 			selection_box = (SelectionBox)((int)selection_box + 1);
 
@@ -93,7 +94,7 @@ void GameMenu::logic()
 				selection_box = SelectionBox::Jogar;
 			}
 			break;
-		case ENTER:
+		case key_enter:
 
 			switch (selection_box)
 			{
