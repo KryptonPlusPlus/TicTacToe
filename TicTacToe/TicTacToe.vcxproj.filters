@@ -28,27 +28,57 @@
     <Filter Include="Menu\Histórico">
       <UniqueIdentifier>{762077dd-5c41-4ffd-b80a-a69103a9ca20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Menu\Instruções\Keyboard">
+      <UniqueIdentifier>{591a2a8d-9332-426e-b601-78e6f1ce132d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Instruções\Keyboard\Keyboards">
+      <UniqueIdentifier>{63e7ec08-784d-4fed-8cf6-82f91196f96a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
-    <ClCompile Include="_TicTacToe.cpp">
-      <Filter>Menu\Jogar</Filter>
-    </ClCompile>
     <ClCompile Include="GameMenu.cpp">
       <Filter>Menu</Filter>
     </ClCompile>
+    <ClCompile Include="Keyboard\Keycaps.cpp">
+      <Filter>Menu\Instruções\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard\Keyboard.cpp">
+      <Filter>Menu\Instruções\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Keyboard\DrawRectangle.cpp">
+      <Filter>Menu\Instruções\Keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe.cpp">
+      <Filter>Menu\Jogar</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Utils.h">
-      <Filter>Arquivos de Recurso</Filter>
-    </ClInclude>
-    <ClInclude Include="_TicTacToe.h">
-      <Filter>Menu\Jogar</Filter>
-    </ClInclude>
     <ClInclude Include="GameMenu.h">
       <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\Keycaps.h">
+      <Filter>Menu\Instruções\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\Keyboard.h">
+      <Filter>Menu\Instruções\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\DrawRectangle.h">
+      <Filter>Menu\Instruções\Keyboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\Keyboards\ABNT_2.h">
+      <Filter>Menu\Instruções\Keyboard\Keyboards</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\Utils\Utils.h">
+      <Filter>Arquivos de Recurso</Filter>
+    </ClInclude>
+    <ClInclude Include="Keyboard\Utils\VetorPlus.h">
+      <Filter>Arquivos de Recurso</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe.h">
+      <Filter>Menu\Jogar</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

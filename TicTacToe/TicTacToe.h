@@ -6,7 +6,7 @@
 
 #include <time.h>    // clock_t e clock() -> Para calcular o tempo de jogo
 #include <string>    // to_string()       -> Converter int para string
-#include "Utils.h"
+#include "keyboard/Utils/Utils.h"
 
 // Parte do codigo para Windows
 #ifdef _WIN32 
@@ -26,7 +26,7 @@
 
 #define _player ( player ? 'X' : 'O' )
 
-class _TicTacToe
+class TicTacToe
 {
 	// ================================================= Parte privada da classe =================================================
 	private:
@@ -66,8 +66,8 @@ class _TicTacToe
 	// ================================================= Parte publica da classe =================================================
 	public:
 		// --- contructor & destructor ---
-		_TicTacToe() {};
-		virtual ~_TicTacToe() {};
+		TicTacToe() {};
+		virtual ~TicTacToe() {};
 
 		// --- Definição das funções publicas ---
 		void setup();

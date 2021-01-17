@@ -2,18 +2,14 @@
 #include <iostream> // cout -> Para escrever no terminal
 
 #include "GameMenu.h"
-#include "_TicTacToe.h"
-#include "Utils.h"
+#include "TicTacToe.h"
 
 void initGame();
 
 int main()
 {
-    system("pause");
-
     GameMenu menuGame = GameMenu();   
    
-    system("pause");
     while (menuGame.getCharControl() != 'x')
     {
         system("cls");
@@ -45,7 +41,7 @@ int main()
 // Função para começar o jogo
 void initGame()
 {
-    _TicTacToe game = _TicTacToe();
+    TicTacToe game = TicTacToe();
     game.setup();
 
     while (game.getCharControl() != 'x')

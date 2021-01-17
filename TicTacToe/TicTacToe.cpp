@@ -1,15 +1,15 @@
 // _TicTacToe.cpp
 //
-#include "_TicTacToe.h"
+#include "TicTacToe.h"
 
-void _TicTacToe::setup()
+void TicTacToe::setup()
 {
     start = clock();    // Começa o tempo
     printf(ESC"[?25l"); // Desativa o cursor
 }
 
 // String dos dados do jogo, para imprimir na tela
-std::string _TicTacToe::draw()
+std::string TicTacToe::draw()
 {
     std::string StringDraw = "";
 
@@ -34,7 +34,7 @@ std::string _TicTacToe::draw()
 }
 
 // Verificações de controle do jogo
-std::string _TicTacToe::verificControlGame()
+std::string TicTacToe::verificControlGame()
 {
     std::string StringVerific = "";
     if (winGame)
@@ -61,7 +61,7 @@ std::string _TicTacToe::verificControlGame()
 }
 
 // Entrada de dados
-void _TicTacToe::input()
+void TicTacToe::input()
 {
     testkey = 0;
 
@@ -78,7 +78,7 @@ void _TicTacToe::input()
 }
 
 // Logica do progama
-void _TicTacToe::logic()
+void TicTacToe::logic()
 {
     // Verificação para exibir a mascara
     if (char_control == 'p')
@@ -172,7 +172,7 @@ void _TicTacToe::logic()
     num_valid_plays++;
 }
 
-void _TicTacToe::endGame()
+void TicTacToe::endGame()
 {
     end = clock();
     temp_in_game = ((end - start) / (CLOCKS_PER_SEC));

@@ -53,8 +53,6 @@ Um jogo em que dois jogadores alternadamente colocar ❌ e ⭕ em compartimentos
 
 ## 🎨 Layout
 
-O layout do jogo é:
-
 <div align="center">
     <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/imagePrint.png" alt="Image" title="Image" width="100%" />
 </div>
@@ -71,10 +69,6 @@ Este jogo foi realizado usando as seguintes Ferramentas:
 &nbsp;&nbsp;&nbsp;
 <a href="https://code.visualstudio.com/">
     <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/Visual-Studio-Code-icon.png" alt="Visual Studio Code" title="Visual Studio Code" width="24px" />
-</a>
-&nbsp;&nbsp;&nbsp;
-<a href="https://inkscape.org/">
-    <img src="https://github.com/KryptonPlusPlus/TicTacToe/blob/master/.github/icon/inkscape-icon.png" alt="InkScape" title="InkScape" width="24px" />
 </a>
 </p>
 </div>
@@ -93,7 +87,6 @@ $ git clone https://github.com/KryptonPlusPlus/TicTacToe.git
 
 <ul>
     <li>Para este projeto é necessário ter instalado em sua maquina o <a href="https://visualstudio.microsoft.com/pt-br/">Visual Studio</a></li>
-	<li>ou <a href="https://code.visualstudio.com/">Visual Studio Code</a> mas sendo nescessário instalar extenções.</li>
 </ul>
 
 ### :computer: Rodando o projeto

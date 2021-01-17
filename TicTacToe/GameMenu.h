@@ -5,7 +5,7 @@
 // ----- Início das Inclusões das Bibliotecas -----
 
 #include <string>    // to_string()       -> Converter int para string
-#include "Utils.h"
+#include "keyboard/Utils/Utils.h"
 
 // Parte do codigo para Windows
 #ifdef _WIN32 
