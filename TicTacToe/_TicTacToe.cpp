@@ -9,9 +9,9 @@ void _TicTacToe::setup()
 }
 
 // String dos dados do jogo, para imprimir na tela
-string _TicTacToe::draw()
+std::string _TicTacToe::draw()
 {
-    string StringDraw = "";
+    std::string StringDraw = "";
 
     StringDraw += "TicTacToe 1.1.0  \n\n";
     
@@ -19,23 +19,27 @@ string _TicTacToe::draw()
     {
         for (int j = 0; j < 3; j++)
         {
-            StringDraw += " "s + ((!showMask) ? print_game_board[i][j] : (game_board[i][j])) + ((j != 2) ? " |" : "");
+            StringDraw += " ";
+            StringDraw += ((!showMask) ? print_game_board[i][j] : (game_board[i][j]));
+            StringDraw += ((j != 2) ? " |" : "");
         }
 
-        StringDraw += "\n"s + ((i != 2) ? "---+---+---" : "") + "\n"s;
+        StringDraw += "\n";
+        StringDraw += ((i != 2) ? "---+---+---" : "");
+        StringDraw += "\n";
     }
-    StringDraw += "\nVez do jogador " + to_string(player + 1) + ".\n"s + verificControlGame();
+    StringDraw += "\nVez do jogador " + std::to_string(player + 1) + ".\n" + verificControlGame();
     
     return StringDraw;
 }
 
 // Verificações de controle do jogo
-string _TicTacToe::verificControlGame()
+std::string _TicTacToe::verificControlGame()
 {
-    string StringVerific = "";
+    std::string StringVerific = "";
     if (winGame)
     {
-        StringVerific += "\nParabens o jogador " + to_string(player + 1) + " venceu." +  "\njogador " + _player + ".\n"s;
+        StringVerific += "\nParabens o jogador " + std::to_string(player + 1) + " venceu." +  "\njogador " + _player + ".\n";
     }
     
     if (controlErr)
@@ -63,9 +67,9 @@ void _TicTacToe::input()
 
     char_control = _getch();
     // Verificação de se o caracter digitado é valido
-    for (int i = 0; i < sizeof(key) / sizeof(key[0]); i++)
+    for (auto& num_key : key)
     {
-        if (char_control == key[i])
+        if (char_control == num_key)
         {
             testkey = 1;
             break;

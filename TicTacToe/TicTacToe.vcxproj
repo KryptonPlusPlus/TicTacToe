@@ -143,18 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CharRectangle.cpp" />
     <ClCompile Include="GameMenu.cpp" />
-    <ClCompile Include="Keyboard.cpp" />
-    <ClCompile Include="Keycaps.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="_TicTacToe.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Keyboard.h" />
-    <ClInclude Include="CharRectangle.h" />
     <ClInclude Include="GameMenu.h" />
-    <ClInclude Include="Keycaps.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="_TicTacToe.h" />
   </ItemGroup>

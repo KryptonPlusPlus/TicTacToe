@@ -24,8 +24,6 @@
 
 //  ----- Fim das Inclusões das Bibliotecas -----
 
-using namespace std;
-
 #define _player ( player ? 'X' : 'O' )
 
 class _TicTacToe
@@ -63,7 +61,7 @@ class _TicTacToe
 		long int temp_in_game = 0;// Tempo de jogo
 
 		// --- Definição das funções privadas ---
-		string verificControlGame();
+		std::string verificControlGame();
 
 	// ================================================= Parte publica da classe =================================================
 	public:
@@ -73,7 +71,7 @@ class _TicTacToe
 
 		// --- Definição das funções publicas ---
 		void setup();
-		string draw();
+		std::string draw();
 		void input();
 		void logic();
 		void endGame();

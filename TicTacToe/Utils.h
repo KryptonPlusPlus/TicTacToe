@@ -24,40 +24,41 @@
 //inverse off       27
 
 // Teclas do teclado
-const static int key_arrow_up    = 72;
-const static int key_arrow_down  = 80;
-const static int key_arrow_left  = 75;
-const static int key_arrow_right = 77;
-const static int key_enter       = 13;
+constexpr int key_arrow_up    = 72;
+constexpr int key_arrow_down  = 80;
+constexpr int key_arrow_left  = 75;
+constexpr int key_arrow_right = 77;
+constexpr int key_enter       = 13;
 
 // --- caracteres de bordas ---
 // Bordas simples
-const static char char_single_upper_left_edge       = '\xda'; // ┌
-const static char char_single_upper_right_edge      = '\xbf'; // ┐
-const static char char_single_bottom_left_edge      = '\xc0'; // └
-const static char char_single_bottom_right_edge     = '\xd9'; // ┘
-const static char char_single_side_edge             = '\xb3'; // │
-const static char char_single_upper_bottom_edge     = '\xc4'; // ─
-const static char char_single_bottom_edge_with_dash = '\xc1'; // ┴
-const static char char_single_top_edge_with_dash    = '\xc2'; // ┬
-const static char char_single_right_edge_with_dash  = '\xc3'; // ├
-const static char char_single_left_edge_with_dash   = '\xb4'; // ┤
-const static char char_single_cross                 = '\xc5'; // ┼
+constexpr char char_single_upper_left_edge       = '\xda'; // ┌
+constexpr char char_single_upper_right_edge      = '\xbf'; // ┐
+constexpr char char_single_bottom_left_edge      = '\xc0'; // └
+constexpr char char_single_bottom_right_edge     = '\xd9'; // ┘
+constexpr char char_single_side_edge             = '\xb3'; // │
+constexpr char char_single_upper_bottom_edge     = '\xc4'; // ─
+constexpr char char_single_bottom_edge_with_dash = '\xc1'; // ┴
+constexpr char char_single_top_edge_with_dash    = '\xc2'; // ┬
+constexpr char char_single_right_edge_with_dash  = '\xc3'; // ├
+constexpr char char_single_left_edge_with_dash   = '\xb4'; // ┤
+constexpr char char_single_cross                 = '\xc5'; // ┼
 
 // Bordas duplas
-const static char char_double_upper_left_edge       = '\xc9'; // ╔	
-const static char char_double_upper_right_edge      = '\xbb'; // ╗
-const static char char_double_bottom_left_edge      = '\xc8'; // ╚
-const static char char_double_bottom_right_edge     = '\xbc'; // ╝
-const static char char_double_side_edge             = '\xba'; // ║
-const static char char_double_upper_bottom_edge     = '\xcd'; // ═
-const static char char_double_bottom_edge_with_dash = '\xca'; // ╩
-const static char char_double_top_edge_with_dash    = '\xcb'; // ╦
-const static char char_double_right_edge_with_dash  = '\xcc'; // ╠
-const static char char_double_left_edge_with_dash   = '\xb9'; // ╣
-const static char char_double_cross                 = '\xce'; // ╬
+constexpr char char_double_upper_left_edge       = '\xc9'; // ╔	
+constexpr char char_double_upper_right_edge      = '\xbb'; // ╗
+constexpr char char_double_bottom_left_edge      = '\xc8'; // ╚
+constexpr char char_double_bottom_right_edge     = '\xbc'; // ╝
+constexpr char char_double_side_edge             = '\xba'; // ║
+constexpr char char_double_upper_bottom_edge     = '\xcd'; // ═
+constexpr char char_double_bottom_edge_with_dash = '\xca'; // ╩
+constexpr char char_double_top_edge_with_dash    = '\xcb'; // ╦
+constexpr char char_double_right_edge_with_dash  = '\xcc'; // ╠
+constexpr char char_double_left_edge_with_dash   = '\xb9'; // ╣
+constexpr char char_double_cross                 = '\xce'; // ╬
 
- // Enum para as cores dos retângulos
-const enum class ColorForeground{ black = 30, red, green, yellow, blue, magenta, cyan, white };
-const enum class ColorBackground{ black = 40, red, green, yellow, blue, magenta, cyan, white };
+// Enum para as cores do terminal Foreground 
+const enum class ColorForeground : short { black = 30, red, green, yellow, blue, magenta, cyan, white };
+// Enum para as cores do terminal Background 
+const enum class ColorBackground : short { black = 40, red, green, yellow, blue, magenta, cyan, white };
 

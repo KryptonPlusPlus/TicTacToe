@@ -7,10 +7,10 @@
 
 // Jogo da Velha [Versão 1.1.0]
 //
-// Vitórias do Jogador 1 -
-// Vitórias do Jogador 2 -
+// Vitórias do Jogador 1 - 0
+// Vitórias do Jogador 2 - 0
 //
-// Tempo Total Jogado -
+// Tempo Total Jogado - 000
 //
 // [X] Jogar
 // [ ] Histórico das Ultimas Partidas
@@ -22,7 +22,7 @@
 
 void GameMenu::setup()
 {
-	printf(ESC"[?25l"); // Desativa o cursor
+	printf(ESC "[?25l"); // Desativa o cursor
 }
 
 string GameMenu::draw()
@@ -36,11 +36,11 @@ string GameMenu::draw()
 
 	StringDraw += "\nTempo Total Jogado - " + "\n\n"s;
 
-	StringDraw += "["s + ((selection_box == SelectionBox::Jogar)      ? 'X' : ' ') + "]"s + " Jogar\n";
-	StringDraw += "["s + ((selection_box == SelectionBox::Historico)  ? 'X' : ' ') + "]"s + " Historico das Ultimas Partidas\n";
-	StringDraw += "["s + ((selection_box == SelectionBox::Reset)      ? 'X' : ' ') + "]"s + " Reset\n"; 
-	StringDraw += "["s + ((selection_box == SelectionBox::Instrucoes) ? 'X' : ' ') + "]"s + " Instrucoes\n";
-	StringDraw += "["s + ((selection_box == SelectionBox::Sair)       ? 'X' : ' ') + "]"s + " Sair\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Jogar)      ? "X" : " ") + "]"s + " Jogar\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Historico)  ? "X" : " ") + "]"s + " Historico das Ultimas Partidas\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Reset)      ? "X" : " ") + "]"s + " Reset\n"; 
+	StringDraw += "["s + ((selection_box == SelectionBox::Instrucoes) ? "X" : " ") + "]"s + " Instrucoes\n";
+	StringDraw += "["s + ((selection_box == SelectionBox::Sair)       ? "X" : " ") + "]"s + " Sair\n";
 
 	StringDraw += "\nAperte Enter para escolher uma das opcoes";
 

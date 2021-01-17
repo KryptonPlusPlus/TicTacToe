@@ -13,8 +13,20 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Keyboard">
-      <UniqueIdentifier>{95cb30a9-2aaa-4e5f-b3f9-4603d84f075e}</UniqueIdentifier>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{e1d4b686-e792-450a-ac83-b1e80a94a1fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Jogar">
+      <UniqueIdentifier>{88a1a72f-47cc-4a4e-a72d-ba4ad53e0cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Instruções">
+      <UniqueIdentifier>{8406e3ac-5497-404f-8f1a-6886760e6a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Reset">
+      <UniqueIdentifier>{2a2eb87d-12b3-4d2a-bba9-25337ffc9516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Histórico">
+      <UniqueIdentifier>{762077dd-5c41-4ffd-b80a-a69103a9ca20}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -22,39 +34,21 @@
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="_TicTacToe.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Menu\Jogar</Filter>
     </ClCompile>
     <ClCompile Include="GameMenu.cpp">
-      <Filter>Arquivos de Origem</Filter>
-    </ClCompile>
-    <ClCompile Include="CharRectangle.cpp">
-      <Filter>Keyboard</Filter>
-    </ClCompile>
-    <ClCompile Include="Keyboard.cpp">
-      <Filter>Keyboard</Filter>
-    </ClCompile>
-    <ClCompile Include="Keycaps.cpp">
-      <Filter>Keyboard</Filter>
+      <Filter>Menu</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="_TicTacToe.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
-    <ClInclude Include="GameMenu.h">
-      <Filter>Arquivos de Cabeçalho</Filter>
-    </ClInclude>
     <ClInclude Include="Utils.h">
       <Filter>Arquivos de Recurso</Filter>
     </ClInclude>
-    <ClInclude Include="CharRectangle.h">
-      <Filter>Keyboard</Filter>
+    <ClInclude Include="_TicTacToe.h">
+      <Filter>Menu\Jogar</Filter>
     </ClInclude>
-    <ClInclude Include="Keyboard.h">
-      <Filter>Keyboard</Filter>
-    </ClInclude>
-    <ClInclude Include="Keycaps.h">
-      <Filter>Keyboard</Filter>
+    <ClInclude Include="GameMenu.h">
+      <Filter>Menu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
